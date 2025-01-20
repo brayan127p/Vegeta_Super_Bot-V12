@@ -30,12 +30,12 @@ let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://i.ib
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 const vid = ['https://qu.ax/Bjirw.mp4', 'https://qu.ax/Bjirw.mp4', 'https://qu.ax/Bjirw.mp4']
 
-let menu = `𔓕꯭  ꯭ 𓏲꯭֟፝੭ SUPER DRAGON BOT Z 𓏲꯭֟፝੭ ꯭  ꯭𔓕
+let menu = `𔓕꯭  ꯭ :*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀𝙍_𝘽𝙊𝙏-𝙑12♱ ¨*:·  ꯭𔓕
 
 🐲 ¡𝐇𝐨𝐥𝐚! 𝐂𝐨𝐦𝐨 𝐄𝐬𝐭𝐚𝐬 𝐄𝐥 𝐃𝐢𝐚 𝐃𝐞 𝐇𝐨𝐲 *${taguser}* Soy un bot de dragón ball${saludo}. 
 
 ┏━━⪩「 𝐈𝐍𝐅𝐎 𝐂𝐑𝐄𝐀𝐃𝐎𝐑ᚐ 」⪨
-┃❂ ⧼👑⧽ *Creador:* ĹєǤ𝒆𝐧𝐃
+┃❂ ⧼👑⧽ *Creador:* ꧁•⊹٭𝙼𝙰𝚁𝚃𝙸𝙽𝙴𝚉٭⊹•꧂
 ┃❂ ⧼🔱⧽ *Modo:* Publico
 ┃❂ ⧼🌠⧽ *Baileys:* Multi Device
 ┃❂ ⧼🤖⧽ *Bot:* ${(conn.user.jid == global.conn.user.jid ? 'Oficial' : 'Sub-Bot')}
