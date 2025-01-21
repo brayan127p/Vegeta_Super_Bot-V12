@@ -1,6 +1,8 @@
 function handler(m) {
 let name = conn.getName(`${numcreador}@s.whatsapp.net`)
+ let name = conn.getName(`${numcreador2}@s.whatsapp.net`)
 let ownerN = `${numcreador}`
+ let ownerN = `${numcreador2}`
 conn.sendContact(m.chat, [[`${ownerN}@s.whatsapp.net`, `${name}`]], m, {
  contextInfo: { 
  forwardingScore: 2023,
