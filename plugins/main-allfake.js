@@ -75,8 +75,8 @@ global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 var canal = 'https://whatsapp.com/channel/0029VagYdbFEwEk5htUejk0t'  
 let canal2 = 'https://whatsapp.com/channel/0029VagYdbFEwEk5htUejk0t'
 var git = 'https://chat.whatsapp.com/FdBottjrmTvIzD1XTc8vyH'
-var github = 'https://chat.whatsapp.com/FdBottjrmTvIzD1XTc8vyH' 
-let correo = 'https://chat.whatsapp.com/IoEnR582d2yIS1I8FR6OuK'
+var github = 'https://chat.whatsapp.com/DWVnDWaepEQCn7uzOPxmHq' 
+let correo = 'https://chat.whatsapp.com/DWVnDWaepEQCn7uzOPxmHq'
 
 global.redes = [canal, canal2, git, github, correo].getRandom()
 
