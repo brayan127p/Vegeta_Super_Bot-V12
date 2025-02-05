@@ -89,8 +89,8 @@ global.photoSity = [imagen8, imagen1, imagen4, imagen6]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.gp4 = 'https://chat.whatsapp.com/IoEnR582d2yIS1I8FR6OuK'
-global.gp1 = 'https://chat.whatsapp.com/IoEnR582d2yIS1I8FR6OuK' 
+global.gp4 = 'https://chat.whatsapp.com/DWVnDWaepEQCn7uzOPxmHq'
+global.gp1 = 'https://chat.whatsapp.com/DWVnDWaepEQCn7uzOPxmHq' 
 global.gp2 = 'https://chat.whatsapp.com/FdBottjrmTvIzD1XTc8vyH'
 global.comunidad1 = 'https://chat.whatsapp.com/DiahfK9brw0Azwsk4R9tku'
 global.channel = 'https://whatsapp.com/channel/0029VagYdbFEwEk5htUejk0t'
