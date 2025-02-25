@@ -148,6 +148,7 @@ let menu = `𔓕꯭  ꯭ :*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀�
 ┃☬ .sorteo
 ┃☬ .itssostupid
 ┃☬ .estupido
+┃☬ .xnxx.com
 ┃☬ .stupid
 ┃☬ .top *<texto>*
 ┃☬ .formartrio @usuario1 @usuario2
