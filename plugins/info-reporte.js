@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 • ${text}`
     await conn.reply('584120346669@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, m, { mentions: conn.parseMention(teks) })
 
-    m.reply('⚠️ *El reporte se envío a mi creador, cualquier informe falso puede ocasionar baneo.*')
+    m.reply('⚠️ *El reporte se envío a mi creador, cualquier informe falso puede ocasionar baneo o te violamos.*')
 }
 handler.help = ['reportar']
 handler.tags = ['info']
