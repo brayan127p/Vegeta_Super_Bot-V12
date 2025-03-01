@@ -26,7 +26,7 @@ let totalreg = Object.keys(global.db.data.users).length
 let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
-let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => "https://qu.ax/baPyF.jpg')
+let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/baPyF.jpg')
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 const vid = ['https://qu.ax/TwaCu.mp4', 'https://qu.ax/eUNxX.mp4', 'https://qu.ax/eUNxX.mp4']
 
