@@ -37,8 +37,8 @@ global.baileys = 'V 6.7.9'
 global.languaje = 'Español'
 global.vs = '2.1.5'
 global.vsJB = '5.0'
-global.nameqr = 'Yuki Suou - Bot'
-global.namebot = '✿◟Yυƙι-Sυσυ-Bσƚ◞✿'
+global.nameqr = 'Vegeta Super - Bot'
+global.namebot = '✿◟Vegeta-Sυper-Bσƚ◞✿'
 global.sessions = 'Sessions'
 global.jadi = 'JadiBots' 
 global.yukiJadibts = true
@@ -135,7 +135,7 @@ global.rpg = {
       role: '⚜️ Rango',
       premium: '🎟️ Premium',
       pointxp: '📧 Puntos Exp',
-      gold: '👑 Oro',
+      gold: '👑 Mot',
       iron: '⛓️ Hierro',
       coal: '🌑 Carbón',
       stone: '🪨 Piedra',
