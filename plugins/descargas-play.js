@@ -80,8 +80,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 };
 
-handler.help = ['play', 'playvid', 'ytv', 'ytmp4', 'yta', 'play2', 'ytmp3'];
-handler.command = ['play', 'playvid', 'ytv', 'ytmp4', 'yta', 'play2', 'ytmp3'];
+handler.help = ['play', 'playvid', 'ytv', 'yta', 'play2',];
+handler.command = ['play', 'playvid', 'ytv', 'yta', 'play2',];
 handler.tags = ['dl'];
 handler.register = true;
 
