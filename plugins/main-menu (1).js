@@ -328,12 +328,14 @@ let menu = `𔓕꯭  ꯭ :*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀�
 ┃Ѽ .aptoide
 ┃Ѽ .pinterest
 ┃Ѽ .pinvid
+┃Ѽ .play
 ┃Ѽ .play2
 ┃Ѽ .play3
 ┃Ѽ .play4
 ┃Ѽ .playdoc
 ┃Ѽ .playdoc2
 ┃Ѽ .mp3
+┃Ѽ .ytmp3
 ┃Ѽ .mp4
 ┃Ѽ .tiktokrandom
 ┃Ѽ .spotify
