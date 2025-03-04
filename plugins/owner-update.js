@@ -1,29 +1,14 @@
-import { exec } from 'child_process';
+import { execSync } from 'child_process'
+let handler = async (m, { conn, text }) => {
+await m.react('🕓')
+if (conn.user.jid == conn.user.jid) {
+let stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''))
+await conn.reply(m.chat, stdout.toString(), m)
+await m.react('✅')
+}}
+handler.help = ['update']
+handler.tags = ['owner']
+handler.command = ['update', 'actualizar', 'fix', 'fixed'] 
+handler.rowner = true
 
-let handler = async (m, { conn }) => {
-  m.reply('🍭 Actualizando el bot...');
-
-  exec('git pull', (err, stdout, stderr) => {
-    if (err) {
-      conn.reply(m.chat, `⚠️ Error: No se pudo realizar la actualización.\nRazón: ${err.message}`, m);
-      return;
-    }
-
-    if (stderr) {
-      console.warn('Advertencia durante la actualización:', stderr);
-    }
-
-    if (stdout.includes('Already up to date.')) {
-      conn.reply(m.chat, '🍭 El bot ya está actualizado.', m);
-    } else {
-      conn.reply(m.chat, `🍬 Actualización realizada con éxito.\n\n${stdout}`, m);
-    }
-  });
-};
-
-handler.help = ['update'];
-handler.tags = ['owner'];
-handler.command = ['update'];
-handler.rowner = true;
-
-export default handler;
+export default handler
