@@ -83,7 +83,7 @@ let menu = `𔓕꯭  ꯭ :*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀�
 ┃✿ .solicitud *<mensaje>*
 ┃✿ .sug *<mensaje>*
 ┃✿ .horario
-┃✿ .skyplus
+┃✿ .luminary's 
 ┃✿ .infobot
 ┃✿ .ping
 ┃✿ .reportar
@@ -303,6 +303,8 @@ let menu = `𔓕꯭  ꯭ :*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀�
 ┃❖ .tiktoksearch <txt>
 ┃❖ .tweetposts *<búsqueda>*
 ┃❖ .wikis
+┃❖ .pack
+┃❖ .girls
 ┃❖ .xnxxsearch <query>
 ┃❖ .ytsearch
 ┃❖ .imagen <query>
