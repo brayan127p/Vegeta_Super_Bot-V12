@@ -11,9 +11,9 @@ let handler = async (m, { conn, args }) => {
 
 🪐 *Creador:*
 
-☁️ ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜
+☁️ ⁱᵃᵐ|Brayan𒆜
 🔖 *Rol:* Creador
-👾 *GitHub:* https://github.com/The-King-Destroy
+👾 *GitHub:* https://github.com/brayan127p
 
 🍃 *Colaboradores:*
 
