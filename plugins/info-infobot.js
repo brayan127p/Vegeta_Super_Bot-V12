@@ -56,32 +56,32 @@ setTimeout(resolve, 1000)
 let timestamp = speed()
 let latensi = speed() - timestamp
 let yuki = `╭─⬣「 *Info De ${botname}* 」⬣\n`
-yuki += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
-yuki += `│ 🍭 *Prefijo* : [  ${usedPrefix}  ]\n`
-yuki += `│ 📦 *Total Plugins* : ${totalf}\n`
-yuki += `│ 💫 *Plataforma* : ${platform()}\n`
-yuki += `│ 🧿 *Servidor* : ${hostname()}\n`
-yuki += `│ 🚀 *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}\n`
-yuki += `│ 🌟 *FreeRAM* : ${format(freemem())}\n`
-yuki += `│ ✨️ *Speed* : ${latensi.toFixed(4)} ms\n`
-yuki += `│ 🕗 *Uptime* : ${uptime}\n`
-yuki += `│ 🍨 *Modo* : ${bot.public ? 'Privado' : 'Publico'}\n`
-yuki += `│ ☁️ *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}* )\n`
-yuki += `│ 🍬 *Grupos Registrados* : ${toNum(totalchats)} ( *${totalchats}* )\n`
-yuki += `│ 🍧 *Registrados* : ${toNum(totalreg)} ( *${totalreg}* ) Usuarios\n`
-yuki += `╰─⬣\n\n`
-yuki += `╭─⬣「 *Chats De ${botname}* 」⬣\n`
-yuki += `│ 🧃 *${groupsIn.length}* Chats en Grupos\n`
-yuki += `│ 🌸 *${groupsIn.length}* Grupos Unidos\n`
-yuki += `│ 🍁 *${groupsIn.length - groupsIn.length}* Grupos Salidos\n`
-yuki += `│ 💬 *${chats.length - groupsIn.length}* Chats Privados\n`
-yuki += `│ 💭 *${chats.length}* Chats Totales\n`
-yuki += `╰─⬣\n\n`
-yuki += `╭─⬣「 *NodeJS Uso de memoria* 」⬣\n`
-yuki += `${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}\n`
-yuki += `╰─⬣`
+vegeta += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
+vegeta += `│ 🍭 *Prefijo* : [  ${usedPrefix}  ]\n`
+vegeta += `│ 📦 *Total Plugins* : ${totalf}\n`
+vegeta += `│ 💫 *Plataforma* : ${platform()}\n`
+vegeta += `│ 🧿 *Servidor* : ${hostname()}\n`
+vegeta += `│ 🚀 *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}\n`
+vegeta += `│ 🌟 *FreeRAM* : ${format(freemem())}\n`
+vegeta += `│ ✨️ *Speed* : ${latensi.toFixed(4)} ms\n`
+vegeta += `│ 🕗 *Uptime* : ${uptime}\n`
+vegeta += `│ 🍨 *Modo* : ${bot.public ? 'Privado' : 'Publico'}\n`
+vegeta += `│ ☁️ *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}* )\n`
+vegeta += `│ 🍬 *Grupos Registrados* : ${toNum(totalchats)} ( *${totalchats}* )\n`
+vegeta += `│ 🍧 *Registrados* : ${toNum(totalreg)} ( *${totalreg}* ) Usuarios\n`
+vegeta += `╰─⬣\n\n`
+vegeta += `╭─⬣「 *Chats De ${botname}* 」⬣\n`
+vegeta += `│ 🧃 *${groupsIn.length}* Chats en Grupos\n`
+vegeta += `│ 🌸 *${groupsIn.length}* Grupos Unidos\n`
+vegeta += `│ 🍁 *${groupsIn.length - groupsIn.length}* Grupos Salidos\n`
+vegeta += `│ 💬 *${chats.length - groupsIn.length}* Chats Privados\n`
+vegeta += `│ 💭 *${chats.length}* Chats Totales\n`
+vegeta += `╰─⬣\n\n`
+vegeta += `╭─⬣「 *NodeJS Uso de memoria* 」⬣\n`
+vegeta += `${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}\n`
+vegeta += `╰─⬣`
 
-await conn.reply(m.chat, yuki, fkontak, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: packname, body: dev, previewType: 0, thumbnail: icons, sourceUrl: redes}}})
+await conn.reply(m.chat, vegeta, fkontak, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: packname, body: dev, previewType: 0, thumbnail: icons, sourceUrl: redes}}})
 }
 handler.help = ['infobot']
 handler.tags = ['info']
