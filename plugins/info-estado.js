@@ -21,17 +21,17 @@ let neww = performance.now()
 let speed = neww - old
 const used = process.memoryUsage()
 let yuki = `\`\`\`Información - ${botname}\`\`\`\n`
-yuki += `👑꙰᠁❥ *◜Creador◞* ⇢ 𝔇ĕ𝐬†𝓻⊙γ𒆜\n`
-yuki += `⚜️꙰᠁❥ *◜Prefijo◞* ⇢ [ ${usedPrefix} ]\n`
-yuki += `📚꙰᠁❥ *◜Versión◞* ⇢ ${vs}\n`
-yuki += `🔐꙰᠁❥ *◜Chats Privados◞* ⇢ ${chats.length - groupsIn.length}\n`
-yuki += `💬꙰᠁❥ *◜Total De Chats◞* ⇢ ${chats.length}\n`
-yuki += `👥꙰᠁❥ *◜Usuarios◞* ⇢ ${totalreg}\n`
-yuki += `📌꙰᠁❥ *◜Grupos◞* ⇢ ${groupsIn.length}\n`
-yuki += `⏱️꙰᠁❥ *◜Actividad◞* ⇢ ${muptime}\n`
-yuki += `🚀꙰᠁❥ *◜Velocidad◞* ⇢ ${(speed * 1000).toFixed(0) / 1000}\n`
-yuki += `🍬꙰᠁❥ *◜Sub-Bots Activos◞* ⇢ ${totalUsers || '0'}`
-await conn.sendFile(m.chat, pp, 'yuki.jpg', yuki, fkontak, null, rcanal)
+Vegeta += `👑꙰᠁❥ *◜Creador◞* ⇢ †|Brayan★\n`
+Vegeta += `⚜️꙰᠁❥ *◜Prefijo◞* ⇢ [ ${usedPrefix} ]\n`
+Vegeta += `📚꙰᠁❥ *◜Versión◞* ⇢ ${vs}\n`
+Vegeta += `🔐꙰᠁❥ *◜Chats Privados◞* ⇢ ${chats.length - groupsIn.length}\n`
+Vegeta += `💬꙰᠁❥ *◜Total De Chats◞* ⇢ ${chats.length}\n`
+Vegeta += `👥꙰᠁❥ *◜Usuarios◞* ⇢ ${totalreg}\n`
+Vegeta += `📌꙰᠁❥ *◜Grupos◞* ⇢ ${groupsIn.length}\n`
+Vegeta += `⏱️꙰᠁❥ *◜Actividad◞* ⇢ ${muptime}\n`
+Vegeta += `🚀꙰᠁❥ *◜Velocidad◞* ⇢ ${(speed * 1000).toFixed(0) / 1000}\n`
+Vegeta += `🍬꙰᠁❥ *◜Sub-Bots Activos◞* ⇢ ${totalUsers || '0'}`
+await conn.sendFile(m.chat, pp, 'Vegeta.jpg', Vegeta, fkontak, null, rcanal)
 }
 handler.help = ['estado']
 handler.tags = ['info']
