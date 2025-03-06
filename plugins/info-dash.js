@@ -9,6 +9,6 @@ let handler = async (m) => {
 
 handler.help = ['luminary's'];
 handler.tags = ['información'];
-handler.command = ['luminary'];
+handler.command = ['luminary's'];
 
 export default handler;
