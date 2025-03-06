@@ -7,7 +7,7 @@ let handler = async (m) => {
   conn.sendMessage(m.chat, { text: message, mentions: [m.sender] }, { quoted: m });
 };
 
-handler.help = ['luminary'];
+handler.help = ['luminary's'];
 handler.tags = ['información'];
 handler.command = ['luminary'];
 
