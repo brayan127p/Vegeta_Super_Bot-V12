@@ -1,3 +1,4 @@
+creditos a Vegeta 
 
 let handler = async (m) => {
   // Texto que deseas enviar
@@ -7,8 +8,8 @@ let handler = async (m) => {
   conn.sendMessage(m.chat, { text: message, mentions: [m.sender] }, { quoted: m });
 };
 
-handler.help = ['luminary's'];
+handler.help = ['luminary'];
 handler.tags = ['información'];
-handler.command = ['luminary's'];
+handler.command = ['luminary'];
 
 export default handler;
