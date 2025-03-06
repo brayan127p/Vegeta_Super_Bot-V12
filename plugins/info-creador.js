@@ -1,4 +1,7 @@
 function handler(m) {
+
+cons img:'https://i.ibb.co/Jww0n5FY/file.jpg'
+
 let name = conn.getName(`${numcreador}@s.whatsapp.net`)
 let ownerN = `${numcreador}`
 conn.sendContact(m.chat, [[`${ownerN}@s.whatsapp.net`, `${name}`]], m, {
