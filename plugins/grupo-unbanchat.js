@@ -8,8 +8,8 @@ await conn.reply(m.chat, '🍬 *¡Vegeta-Bot ya fué desbaneada en este chat!*',
 handler.help = ['unbanchat'];
 handler.tags = ['grupo'];
 handler.command = ['unbanchat','desbanearchat','desbanchat']
-handler.admin = true 
-handler.botuser = true
+handler.User = true 
+handler.botUser = true
 handler.group = true
 
 export default handler
