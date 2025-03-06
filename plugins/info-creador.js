@@ -1,6 +1,6 @@
 function handler(m) {
 
-cons img:'https://qu.ax/CRAfq.jpg'
+cons img:'qu.ax/CRAfq.jpg'
 
 let name = conn.getName(`${numcreador}@s.whatsapp.net`)
 let ownerN = `${numcreador}`
