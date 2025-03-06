@@ -3,7 +3,7 @@ import { sticker } from '../lib/sticker.js';
 //import uploadImage from '../lib/uploadImage.js';
 //import { webp2png } from '../lib/webp2mp4.js';
 
-const redes = 'pene.com'; // Define la URL aquí
+const redes = 'https://chat.whatsapp.com/KkAYjIFHOGXKNjUN6IkUqf'; // Define la URL aquí
 const icons = null; // Si "icons" es necesario, define su valor o cámbialo según corresponda
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
