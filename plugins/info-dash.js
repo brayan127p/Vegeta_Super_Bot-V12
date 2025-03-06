@@ -1,11 +1,22 @@
 
-let handler = async (m, { conn }) => {
-  const dashLink = 'https://dash.luminarys.shop'; //
+import { sticker } from '../lib/sticker.js';
 
-  // Envía el enlace como respuesta
-  conn.reply(m.chat, `Aquí tienes el enlace del Dash del host luminar'ys: ${dashLink}`, m);
+let handler = async (m, { conn }) => {
+  try {
+    // Texto que deseas poner en el sticker
+    const text = 'hola';
+    
+    // Crea el sticker con el texto
+    let stiker = await sticker(false, null, global.packname, global.author, text);
+    
+    // Envía el sticker al chat
+    conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, true);
+  } catch (e) {
+    console.error(e);
+    conn.reply(m.chat, '⚡ Ocurrió un error al crear el sticker.', m);
+  }
 };
 
-handler.command = ['dash', 'enviardash'];
-
-export default handler;
+handler.help = ['luminary'];
+handler.tags = ['sticker'];
+handler.command = ['luminary'];
