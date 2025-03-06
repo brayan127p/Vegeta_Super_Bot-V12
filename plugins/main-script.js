@@ -9,7 +9,7 @@ if (!res.ok) throw new Error('Error al obtener datos del repositorio')
 let json = await res.json()
 
 let txt = `*乂  S C R I P T  -  M A I N  乂*\n\n`
-txt += `✩  *Nombre* : ${Vegeta.Super-Bot}\n`
+txt += `✩  *Nombre* : ${json.name}\n`
 txt += `✩  *Visitas* : ${json.watchers_count}\n`
 txt += `✩  *Peso* : ${(json.size / 1024).toFixed(2)} MB\n`
 txt += `✩  *Actualizado* : ${moment(json.updated_at).format('DD/MM/YY - HH:mm:ss')}\n`
