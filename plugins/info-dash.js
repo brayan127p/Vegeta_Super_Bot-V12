@@ -1,22 +1,14 @@
 
-import { sticker } from '../lib/sticker.js';
+let handler = async (m) => {
+  // Texto que deseas enviar
+  const message = `*🪻Accede a Luminarys host mejorado a través de los siguientes links🪻*\n🪻Dash : dash.luminarys.shop\n🪻Panel : panel.luminarys.shop`;
 
-let handler = async (m, { conn }) => {
-  try {
-    // Texto que deseas poner en el sticker
-    const text = 'hola';
-    
-    // Crea el sticker con el texto
-    let stiker = await sticker(false, null, global.packname, global.author, text);
-    
-    // Envía el sticker al chat
-    conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, true);
-  } catch (e) {
-    console.error(e);
-    conn.reply(m.chat, '⚡ Ocurrió un error al crear el sticker.', m);
-  }
+  // Envía el mensaje de texto al chat
+  conn.sendMessage(m.chat, { text: message, mentions: [m.sender] }, { quoted: m });
 };
 
 handler.help = ['luminary'];
-handler.tags = ['sticker'];
+handler.tags = ['información'];
 handler.command = ['luminary'];
+
+export default handler;
