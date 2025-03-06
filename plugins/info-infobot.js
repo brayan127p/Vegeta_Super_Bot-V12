@@ -55,7 +55,7 @@ setTimeout(resolve, 1000)
 }
 let timestamp = speed()
 let latensi = speed() - timestamp
-let yuki = `╭─⬣「 *Info De ${botname}* 」⬣\n`
+let Vegeta = `╭─⬣「 *Info De ${botname}* 」⬣\n`
 vegeta += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
 vegeta += `│ 🍭 *Prefijo* : [  ${usedPrefix}  ]\n`
 vegeta += `│ 📦 *Total Plugins* : ${totalf}\n`
