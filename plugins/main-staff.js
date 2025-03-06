@@ -17,6 +17,9 @@ let handler = async (m, { conn, args }) => {
 
 🍃 *Colaboradores:*
 
+👑 Barboza
+⭐Rol:*Developer*
+
 🫧 𝓔𝓶𝓶𝓪 𝓥𝓲𝓸𝓵𝓮𝓽𝓼 𝓥𝓮𝓻𝓼𝓲ó𝓷 
 🔖 *Rol:* Developer
 👾 *GitHub:* https://github.com/Elpapiema
