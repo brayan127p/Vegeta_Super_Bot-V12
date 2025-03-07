@@ -1,5 +1,5 @@
-// Credits: OfcKing
-// >> https://github.com/OfcKing
+// Credits: brayan127p
+// >> https://github.com/brayan127p
 
 import fs from 'fs';
 
