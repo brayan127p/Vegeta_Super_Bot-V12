@@ -5,13 +5,13 @@
 import PhoneNumber from 'awesome-phonenumber';
 
 async function handler(m, { conn }) { 
-    let numcreador = '50488198573';
+    let numcreador = '526641804242';
     let ownerJid = numcreador + '@s.whatsapp.net';
 
     let name = await conn.getName(ownerJid) || 'Deylin'; 
     let about = (await conn.fetchStatus(ownerJid).catch(() => {}))?.status || 'Sin descripción';
 
-    let empresa = 'Deylin - Servicios Tecnológicos';
+    let empresa = 'ᑲrᥲᥡᥲᥒ- Servicios Tecnológicos';
 
     let vcard = `
 BEGIN:VCARD
