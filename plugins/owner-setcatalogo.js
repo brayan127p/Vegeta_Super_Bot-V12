@@ -74,7 +74,7 @@ async function catbox(content) {
   formData.append("reqtype", "fileupload");
   formData.append("fileToUpload", blob, randomBytes + "." + ext);
 
-  const response = await fetch("https://i.ibb.co/B2gcGkp5/file.jpg", {
+  const response = await fetch("htpps://catbox.moe/user/api.php", {
     method: "POST",
     body: formData,
     headers: {
