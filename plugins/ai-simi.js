@@ -14,10 +14,10 @@ const handler = async (m, { conn, text, command, args, usedPrefix }) => {
     }
 };
 
-handler.help = ['yuki', 'bot'];
+handler.help = ['vegeta', 'bot'];
 handler.tags = ['ai'];
 handler.register = true;
-handler.command = ['bot', 'yuki'];
+handler.command = ['bot', 'vegeta'];
 export default handler;
 
 async function simitalk(ask, apikeyyy = "iJ6FxuA9vxlvz5cKQCt3", language = "es") {
