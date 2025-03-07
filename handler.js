@@ -366,7 +366,7 @@ if (name != 'grupo-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-ex
 if (m.text && user.banned && !isROwner) {
 if (user.antispam > 2) return
 m.reply(`🍭 Estas baneado/a, no puedes usar comandos en este bot!\n\n${user.bannedReason ? `\n📝 *Motivo:* 
-${user.bannedReason}` : '📄 *Motivo:* Sin Especificar'}\n\n🍧 Si quieres que seas desbaneado en este bot escribe a: Wa.me/584120346669`)
+${user.bannedReason}` : '📄 *Motivo:* Sin Especificar'}\n\n🍧 Si quieres que seas desbaneado en este bot escribe a: Wa.me/526641804242`)
 user.antispam++        
 return
 }
