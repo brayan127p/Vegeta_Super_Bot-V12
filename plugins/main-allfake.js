@@ -58,7 +58,7 @@ global.rwait = '🕒'
 global.done = '✅'
 global.error = '✖️'
 
-//Emojis determinado de Yuki Bot
+//Emojis determinado de Vegeta Bot
 global.emoji = '🍧'
 global.emoji2 = '🍬'
 global.emoji3 = '🍨'
