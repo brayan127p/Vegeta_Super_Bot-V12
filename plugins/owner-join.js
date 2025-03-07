@@ -1,7 +1,7 @@
 let linkRegex = /https:\/\/chat\.whatsapp\.com\/([0-9A-Za-z]{20,24})/i;
 
 let handler = async (m, { conn, text, isOwner }) => {
-    if (!text) return m.reply('🍬 Debes enviar una invitacion para que *Yuki-Bot* se una al grupo.');
+    if (!text) return m.reply('🍬 Debes enviar una invitacion para que *Vegeta - Bot* se una al grupo.');
 
     let [_, code] = text.match(linkRegex) || [];
 
