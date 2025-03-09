@@ -22,13 +22,13 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
         {
           buttonId: `.yta ${videoInfo.url}`,
           buttonText: {
-            displayText: 'ᯓ👑 𝑨𝒖𝒅𝒊𝒐',
+            displayText: '⏤͟͟͞͞👑 𝑨𝒖𝒅𝒊𝒐',
           },
         },
         {
           buttonId: `.ytv ${videoInfo.url}`,
           buttonText: {
-            displayText: 'ᯓ👑 𝑽𝒊𝒅𝒆𝒐',
+            displayText: '⏤͟͟͞͞👑 𝑽𝒊𝒅𝒆𝒐',
           },
         },
       ],
@@ -81,7 +81,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 };
 
 handler.help = ['play', 'playvid', 'ytv', 'yta', 'play2',];
-handler.command = ['play', 'playvid', 'ytv', 'yta', 'play2',];
+handler.command = ['play4', 'playvid', 'ytv', 'yta', 'play23',];
 handler.tags = ['dl'];
 handler.register = true;
 
@@ -125,13 +125,13 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
         {
           buttonId: `.ytmp3 ${videoInfo.url}`,
           buttonText: {
-            displayText: 'ᯓ👑 𝑨𝒖𝒅𝒊𝒐',
+            displayText: '⏤͟͟͞͞👑 𝑨𝒖𝒅𝒊𝒐',
           },
         },
         {
           buttonId: `.ytmp4 ${videoInfo.url}`,
           buttonText: {
-            displayText: 'ᯓ👑  𝑽𝒊𝒅𝒆𝒐',
+            displayText: '⏤͟͟͞͞👑  𝑽𝒊𝒅𝒆𝒐',
           },
         },
       ],
@@ -163,7 +163,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 };
 
 handler.help = ['play', 'playvid', 'ytv',  'yta', 'play2',];
-handler.command = ['play', 'playvid', 'ytv',  'yta', 'play2',];
+handler.command = ['play4', 'playvid', 'ytv',  'yta', 'play23',];
 handler.tags = ['dl'];
 handler.group = true;
 handler.register = true;
