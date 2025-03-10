@@ -1,16 +1,3 @@
-/*⚠ PROHIBIDO EDITAR ⚠
-Este codigo fue modificado, adaptado y mejorado por
-- ReyEndymion >> https://github.com/ReyEndymion
-El codigo de este archivo esta inspirado en el codigo original de:
-- Aiden_NotLogic >> https://github.com/ferhacks
-*El archivo original del MysticBot-MD fue liberado en mayo del 2024 aceptando su liberacion*
-El codigo de este archivo fue parchado en su momento por:
-- BrunoSobrino >> https://github.com/BrunoSobrino
-Contenido adaptado por:
-- GataNina-Li >> https://github.com/GataNina-Li
-- elrebelde21 >> https://github.com/elrebelde21
-*/
-
 const { useMultiFileAuthState, DisconnectReason, makeCacheableSignalKeyStore, fetchLatestBaileysVersion} = (await import("@whiskeysockets/baileys"));
 import qrcode from "qrcode"
 import NodeCache from "node-cache"
@@ -30,34 +17,56 @@ let crm3 = "SBpbmZvLWRvbmFyLmpz"
 let crm4 = "IF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz"
 let drm1 = ""
 let drm2 = ""
-let rtx = "*⪛✰ ↫ 𝕍𝕖𝕘𝕖𝕥𝕒  -  𝕊𝕦𝕡𝕖𝕣  -  𝔹𝕠𝘵 ↬ ✰⪜*\n\n✐ Cσɳҽxισɳ SυႦ-Bσƚ Mσԃҽ QR\n\n✰ Con otro celular o en la PC escanea este QR para convertirte en un *Sub-Bot* Temporal.\n\n\`1\` » Haga clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toque dispositivos vinculados\n\n\`3\` » Escanee este codigo QR para iniciar sesion con el bot\n\n✧ ¡Este código QR expira en 45 segundos!."
-let rtx2 = "*⪛✰ ↫ 𝕍𝕖𝕘𝕖𝕥𝕒  -  𝕊𝕦𝕡𝕖𝕣  -  𝔹𝕠𝘵 ↬ ✰⪜*\n\n✐ Cσɳҽxισɳ SυႦ-Bσƚ Mσԃҽ Cσԃҽ\n\n✰ Usa este Código para convertirte en un *Sub-Bot* Temporal.\n\n\`1\` » Haga clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toque dispositivos vinculados\n\n\`3\` » Selecciona Vincular con el número de teléfono\n\n\`4\` » Escriba el Código para iniciar sesion con el bot\n\n✧ No es recomendable usar tu cuenta principal."
+let rtx = `☆ *𝐕𝐄𝐆𝐄𝐓𝐀- 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓* ☆
+
+✦ *Conexión Sub-Bot Modo QR* ✦
+
+☰ Escanea este código QR con otro celular o desde la PC para convertirte en un *Sub-Bot* Temporal.
+
+➤ \`1\` 〉 Toca los tres puntos en la esquina superior derecha.
+➤ \`2\` 〉 Ve a "Dispositivos vinculados".
+➤ \`3\` 〉 Escanea este QR y conéctate al bot.
+
+⚠ *Este código QR expira en 45 segundos. No pierdas tiempo.*`;
+
+let rtx2 = `☆ *𝐕𝐄𝐆𝐄𝐓𝐀 - 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓* ☆
+
+✦ *Conexión Sub-Bot Modo Código* ✦
+
+☰ Usa este código para convertirte en un *Sub-Bot* Temporal.
+
+➤ \`1\` 〉 Toca los tres puntos en la esquina superior derecha.
+➤ \`2\` 〉 Ve a "Dispositivos vinculados".
+➤ \`3\` 〉 Selecciona *Vincular con el número de teléfono*.
+➤ \`4\` 〉 Ingresa el código y conéctate al bot.
+
+⚠ *No uses tu cuenta principal. Podría ser peligroso.*`;
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const 𝕍𝕖𝕘𝕖𝕥𝕒JBOptions = {}
+const yukiJBOptions = {}
 if (global.conns instanceof Array) console.log()
 else global.conns = []
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 //if (!globalThis.db.data.settings[conn.user.jid].jadibotmd) return m.reply(`♡ Comando desactivado temporalmente.`)
 let time = global.db.data.users[m.sender].Subs + 120000
-if (new Date - global.db.data.users[m.sender].Subs < 120000) return conn.reply(m.chat, `🍬 Debes esperar ${msToTime(time - new Date())} para volver a vincular un *Sub-Bot.*`, m)
+if (new Date - global.db.data.users[m.sender].Subs < 120000) return conn.reply(m.chat, `${emoji} Debes esperar ${msToTime(time - new Date())} para volver a vincular un *Sub-Bot.*`, m)
 if (Object.values(global.conns).length === 30) {
-return m.reply('🍭 No se han encontrado espacios para *Sub-Bots* disponibles.')
+return m.reply(`${emoji2} No se han encontrado espacios para *Sub-Bots* disponibles.`)
 }
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let id = `${who.split`@`[0]}`  //conn.getName(who)
-let path𝕍𝕖𝕘𝕖𝕥𝕒JadiBot = path.join(`./${jadi}/`, id)
-if (!fs.existsSync(path𝕍𝕖𝕘𝕖𝕥𝕒JadiBot)){
+let pathYukiJadiBot = path.join(`./${jadi}/`, id)
+if (!fs.existsSync(pathYukiJadiBot)){
 fs.mkdirSync(pathYukiJadiBot, { recursive: true })
 }
-yukiJBOptions.pathYukiJadiBot = path𝕍𝕖𝕘𝕖𝕥𝕒JadiBot
-𝕍𝕖𝕘𝕖𝕥𝕒JBOptions.m = m
-𝕍𝕖𝕘𝕖𝕥𝕒JBOptions.conn = conn
-𝕍𝕖𝕘𝕒𝕥𝕒JBOptions.args = args
-𝕍𝕖𝕘𝕖𝕥𝕒JBOptions.usedPrefix = usedPrefix
-𝕍𝕖𝕘𝕖𝕥𝕒JBOptions.command = command
-𝕍𝕖𝕘𝕖𝕥𝕒JadiBot(𝕍𝕖𝕘𝕖𝕥𝕒JBOptions)
+yukiJBOptions.pathYukiJadiBot = pathYukiJadiBot
+yukiJBOptions.m = m
+yukiJBOptions.conn = conn
+yukiJBOptions.args = args
+yukiJBOptions.usedPrefix = usedPrefix
+yukiJBOptions.command = command
+yukiJadiBot(yukiJBOptions)
 global.db.data.users[m.sender].Subs = new Date * 1
 } 
 handler.help = ['serbot', 'serbot code']
@@ -66,7 +75,7 @@ handler.command = ['jadibot', 'serbot']
 export default handler 
 
 export async function yukiJadiBot(options) {
-let { path𝕍𝕖𝕘𝕖𝕥𝕒JadiBot, m, conn, args, usedPrefix, command } = options
+let { pathYukiJadiBot, m, conn, args, usedPrefix, command } = options
 const mcode = args[0] && /(--code|code)/.test(args[0].trim()) ? true : args[1] && /(--code|code)/.test(args[1].trim()) ? true : false
 let txtCode, codeBot, txtQR
 if (mcode) {
@@ -74,13 +83,13 @@ args[0] = args[0].replace(/^--code$|^code$/, "").trim()
 if (args[1]) args[1] = args[1].replace(/^--code$|^code$/, "").trim()
 if (args[0] == "") args[0] = undefined
 }
-const pathCreds = path.join(path𝕍𝕖𝕘𝕖𝕥𝕒JadiBot, "creds.json")
-if (!fs.existsSync(path𝕍𝕖𝕘𝕖𝕥𝕒JadiBot)){
-fs.mkdirSync(path𝕍𝕖𝕘𝕖𝕥𝕒JadiBot, { recursive: true })}
+const pathCreds = path.join(pathYukiJadiBot, "creds.json")
+if (!fs.existsSync(pathYukiJadiBot)){
+fs.mkdirSync(pathYukiJadiBot, { recursive: true })}
 try {
 args[0] && args[0] != undefined ? fs.writeFileSync(pathCreds, JSON.stringify(JSON.parse(Buffer.from(args[0], "base64").toString("utf-8")), null, '\t')) : ""
 } catch {
-conn.reply(m.chat, `🍬 Use correctamente el comando » ${usedPrefix + command} code`, m)
+conn.reply(m.chat, `${emoji} Use correctamente el comando » ${usedPrefix + command} code`, m)
 return
 }
 
@@ -108,7 +117,7 @@ if (store) {
 //const msg = store.loadMessage(key.remoteJid, key.id)
 //return msg.message && undefined
 } return {
-conversation: '𝕍𝕖𝕘𝕖𝕥𝕒-𝕊𝕦𝕡𝕖𝕣-𝔹𝕠𝘵',
+conversation: 'Yuki-Suou-Bot',
 }}} 
 
 let sock = makeWASocket(connectionOptions)
@@ -209,14 +218,8 @@ console.log(chalk.bold.cyanBright(`\n❒⸺⸺⸺⸺【• SUB-BOT •】⸺⸺�
 sock.isInit = true
 global.conns.push(sock)
 
-//let user = global.db.data?.users[`${path.basename(pathYukiJadiBot)}@s.whatsapp.net`]
 m?.chat ? await conn.sendMessage(m.chat, {text: args[0] ? `@${m.sender.split('@')[0]}, ya estás conectado, leyendo mensajes entrantes...` : `@${m.sender.split('@')[0]}, genial ya eres parte de nuestra familia de Sub-Bots.`, mentions: [m.sender]}, { quoted: m }) : ''
-//await sleep(3000)
-//await conn.sendMessage(m.chat, {text : `Cargando.. ✨`}, { quoted: m })
-//if (global.conn.user.jid.split`@`[0] != sock.user.jid.split`@`[0]) return
-//if (!args[0]) m?.chat ? conn.sendMessage(m.sender, {text : usedPrefix + command + " " + Buffer.from(fs.readFileSync(pathCreds), "utf-8").toString("base64")}, { quoted: m }) : ''    
-//await sleep(5000)
-//if (!args[0]) conn.sendMessage(m.chat, {text: usedPrefix + command + " " + Buffer.from(fs.readFileSync(`./${jadi}/` + uniqid + "/creds.json"), "utf-8").toString("base64")}, { quoted: m })
+
 }}
 setInterval(async () => {
 if (!sock.user) {
