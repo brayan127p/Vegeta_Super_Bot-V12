@@ -172,13 +172,13 @@ href="https://dash.luminarys.shop.home"><img src="https://qu.ax/VAgKd.jpg" heigh
 | APP | TIPO | ENLACE |
 |------|-------------|-------|
 | WhatsApp | Canal | [¡Click aquí!](https://whatsapp.com/channel/0029VagYdbFEwEk5htUejk0t) |
-| WhatsApp | Team STARCORE | [¡Click aquí!](https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v/3155) |
+| WhatsApp | Team STARCORE | [¡Click aquí!](https://whatsapp.com/channel/0029Vb7CL7dGk1FtzTLjNt3S) |
 | WhatsApp | Grupo Ofc | [¡Click aquí!](https://chat.whatsapp.com/Jjs2l4X3LdP7RHr06WsasW) |
  
 
 ### **`🔱 Propietario`**
 <a
-href="https://github.com/brayan127p"><img src="https://qu.ax/AcSK.jpg" width="130" height="130" alt="Brayan"/></a>
+href="https://github.com/brayan127p"><img src="https://qu.ax/aDqOk.jpg" width="130" height="130" alt="Brayan"/></a>
 
 </a> 
 
@@ -188,4 +188,4 @@ href="https://github.com/brayan127p"><img src="https://qu.ax/AcSK.jpg" width="13
 <a
 href="https://github.com/brayan127p"><img src="https://github.com/brayan127p.png" width="140" height="140" alt="Brayan"/></a>
 
-[© Powered By Team STARCORE ⚡︎](https://whatsapp.com/channel/0029VagYdbFEwEk5htUejk0t)
+[© Powered By Team STARCORE ⚡︎](https://whatsapp.com/channel/0029Vb7CL7dGk1FtzTLjNt3S)
