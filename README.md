@@ -107,7 +107,7 @@ Si después de instalar el bot en Termux y iniciar la session del bot (el numero
 
 2. Elimina la carpeta MiniSession:
     ```bash
-    rm -rf MeguminSession
+    rm -rf yukiSession
     ```
 
 3. Inicia el bot nuevamente:
@@ -134,7 +134,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ##### **`🌟Luminary's`**
 
 <a
-href="https://dash.luminarys.shop.home"><img src="https://qu.ax/VAgKd.png" height="125px"></a>
+href="https://dash.luminarys.shop.home"><img src="https://qu.ax/VAgKd.jpg" height="125px"></a>
 
 <div align=>
  
@@ -142,11 +142,11 @@ href="https://dash.luminarys.shop.home"><img src="https://qu.ax/VAgKd.png" heigh
 <details>
  <summary><b> ❤️ servidor Luminary's</b></summary>
 
-* Estado Luminarys [`Status`](https://estado.Luminary's.shop)
+* Estado Luminarys [`Status`](https://estado dash.Luminary's.shop)
 * Dash Luminary's[`Dash`](https://dash.luminarys.shop/home)
 * Panel Luminary's [`Panel`](https://panel.luminarys.shop/)
-* Canal de WhatsApp [`Canal Sky`](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
-* Comunidad Sky [`Click`](https://chat.whatsapp.com/KGPhTIfgOzZCMNqoc3R7OW)
+* Canal de WhatsApp [`Canal luminary's`](https://whatsapp.com/channel/0029Vb7CL7dGk1FtzTLjNt3S)
+* Comunidad luminary's [`Click`](https://chat.whatsapp.com/Lai4h92i9NMDDNoTf8w72t)
 
 ---
 
