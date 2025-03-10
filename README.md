@@ -9,7 +9,7 @@
 
 <div align="center">
  
-[![Dueño](https://img.shields.io/badge/Dueño-00802f?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/526633900512)
+[![Dueño](https://img.shields.io/badge/Dueño-00802f?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/526641804242)
 [![Soporte](https://img.shields.io/badge/soporte-00802f?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/526641804242)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Vegeta-bot)
 </div>
@@ -134,7 +134,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ##### **`🌟Luminary's`**
 
 <a
-href="https://dash.luminarys.shop.home"><img src="https://qu.ax/zFzXF.png" height="125px"></a>
+href="https://dash.luminarys.shop.home"><img src="https://qu.ax/VAgKd.png" height="125px"></a>
 
 <div align=>
  
