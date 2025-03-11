@@ -9,7 +9,7 @@ async function handler(m, { conn }) {
     let ownerJid = numcreador + '@s.whatsapp.net';
 
    
-    let name = await conn.getName(ownerJid) || 'Deylin'; 
+    let name = await conn.getName(ownerJid) || 'Brayan'; 
     let about = (await conn.fetchStatus(ownerJid).catch(() => {}))?.status || 'Sin descripción';
 
 
