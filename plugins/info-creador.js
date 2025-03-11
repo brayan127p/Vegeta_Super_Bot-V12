@@ -5,8 +5,8 @@
 import PhoneNumber from 'awesome-phonenumber';
 
 async function handler(m, { conn }) { 
-    let numcreador = '524623467530'; 
-    let ownerJid = numcreador + '@s.whatsapp.net';
+    let numcreadora = '524623467530'; 
+    let ownerJid = numcreadora + '@s.whatsapp.net';
 
    
     let name = await conn.getName(ownerJid) || 'Brayan'; 
@@ -18,7 +18,7 @@ BEGIN:VCARD
 VERSION:3.0
 N:;${name};;;
 FN:${name}
-TEL;waid=${numcreador}:${new PhoneNumber('+' + numcreador).getNumber('international')}
+TEL;waid=${numcreadora}:${new PhoneNumber('+' + numcreadora).getNumber('international')}
 NOTE:${about}
 END:VCARD`.trim();
 
@@ -33,6 +33,6 @@ END:VCARD`.trim();
 
 handler.help = ['owner']; 
 handler.tags = ['main']; 
-handler.command = ['owner', 'creator', 'creador', 'dueño'];
+handler.command = ['owner', 'creator', 'creadora', 'dueña'];
 
 export default handler;
