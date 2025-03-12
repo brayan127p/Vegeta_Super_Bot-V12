@@ -1,6 +1,6 @@
 import yts from 'yt-search';
 
-const handler = async (m, { conn, text, , command }) => {
+const handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `${emoji} Por favor ingresa la música que deseas descargar.`;
 
   const isVideo = /vid|2|mp4|v$/.test(command);
