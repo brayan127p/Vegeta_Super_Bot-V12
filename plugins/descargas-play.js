@@ -1,4 +1,4 @@
-import yts from 'yt-searchmm';
+import yts from 'yt-search';
 
 const handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `${emoji} Por favor ingresa la música que deseas descargar.`;
