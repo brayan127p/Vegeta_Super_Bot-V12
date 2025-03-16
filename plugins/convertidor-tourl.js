@@ -1,43 +1,45 @@
-import fs from 'fs'
-import FormData from 'form-data'
-import axios from 'axios'
+import uploadFile from '../lib/uploadFile.js'
+import uploadImage from '../lib/uploadImage.js'
 import fetch from 'node-fetch'
 
-let handler = async (m, { conn }) => {
-
+let handler = async (m) => {
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-
-  await m.react('🕒')
-  if (!mime.startsWith('image/')) {
-    return m.reply('🍭 Responde A Una Imagen ✨')
-  }
-
+  if (!mime) return conn.reply(m.chat, `${emoji} Por favor, responda a una *Imagen* o *Vídeo.*`, m)
+  await m.react(rwait)
+  try {
   let media = await q.download()
-  let formData = new FormData()
-  formData.append('image', media, { filename: 'file' })
+  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
+  let link = await (isTele ? uploadImage : uploadFile)(media)
+  let img = await (await fetch(`${link}`)).buffer()
+  let txt = `乂  *L I N K - E N L A C E*  乂\n\n`
+      txt += `*» Enlace* : ${link}\n`
+      txt += `*» Acortado* : ${await shortUrl(link)}\n`
+      txt += `*» Tamaño* : ${formatBytes(media.length)}\n`
+      txt += `*» Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
+      txt += `> *${dev}*`
 
-  let api = await axios.post('https://api.imgbb.com/1/upload?key=10604ee79e478b08aba6de5005e6c798', formData, {
-    headers: {
-      ...formData.getHeaders()
-    }
-  })
-
-  await m.react('✅')
-  if (api.data.data) {
-    let txt = `${wm}\n\n`
-        txt += `*🔖 Titulo* : ${q.filename || 'crow'}\n`
-        txt += `*🔖 Enlace* : ${api.data.data.url}\n`
-        txt += `*🔖 Mime* : ${mime}\n`
-        txt += `*🔖 File* : ${q.filename || 'crow.jpg'}\n`
-        txt += `${dev}`
-    await conn.sendFile(m.chat, api.data.data.url, 'ibb.jpg', txt, m, null, fake)
-  } else {
-    await m.react('✅')
-  }
-}
-handler.tags = ['tools']
+await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, fkontak)
+await m.react(done)
+} catch {
+await m.react(error)
+}}
 handler.help = ['tourl']
-handler.command = /^(tourl)$/i
-handler.register = true 
+handler.tags = ['transformador']
+handler.command = ['tourl', 'upload']
+
 export default handler
+
+function formatBytes(bytes) {
+  if (bytes === 0) {
+    return '0 B';
+  }
+  const sizes = ['B', 'KB', 'MB', 'GB', 'TB']
+  const i = Math.floor(Math.log(bytes) / Math.log(1024))
+  return `${(bytes / 1024 ** i).toFixed(2)} ${sizes[i]}`;
+}
+
+async function shortUrl(url) {
+        let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
+        return await res.text()
+}
