@@ -5,30 +5,27 @@ import fetch from 'node-fetch'
 let handler = async (m) => {
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-  if (!mime) return conn.reply(m.chat, `${emoji} Por favor, responda a una *Imagen* o *Vídeo.*`, m, fake);
-  await m.react(rwait);
+  if (!mime) return conn.reply(m.chat, `${emoji} Por favor, responda a una *Imagen* o *Vídeo.*`, m)
+  await m.react(rwait)
   try {
-    let media = await q.download()
-    let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
-    let link = await (isTele ? uploadImage : uploadFile)(media)
-    let img = await (await fetch(`${link}`)).buffer()
-    let txt = `乂  *L I N K - E N L A C E*  乂\n\n`
-        txt += `*» Enlace* : ${link}\n`
-        txt += `*» Acortado* : ${await shortUrl(link)}\n`
-        txt += `*» Tamaño* : ${formatBytes(media.length)}\n`
-        txt += `*» Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
-        txt += `> *${dev}*`
+  let media = await q.download()
+  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
+  let link = await (isTele ? uploadImage : uploadFile)(media)
+  let img = await (await fetch(`${link}`)).buffer()
+  let txt = `乂  *L I N K - E N L A C E*  乂\n\n`
+      txt += `*» Enlace* : ${link}\n`
+      txt += `*» Acortado* : ${await shortUrl(link)}\n`
+      txt += `*» Tamaño* : ${formatBytes(media.length)}\n`
+      txt += `*» Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
+      txt += `> *${dev}*`
 
-    await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, fake, fkontak);
-    await m.react(done);
-  } catch {
-    await conn.reply(m.chat, `${emoji} Ocurrió un error al subir el archivo.`, m, fake);
-    await m.react(error);
-  }
-}
+await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, fkontak)
+await m.react(done)
+} catch {
+await m.react(error)
+}}
 handler.help = ['tourl']
 handler.tags = ['transformador']
-handler.register = true
 handler.command = ['tourl', 'upload']
 
 export default handler
@@ -43,6 +40,6 @@ function formatBytes(bytes) {
 }
 
 async function shortUrl(url) {
-  let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
-  return await res.text()
+        let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
+        return await res.text()
 }
