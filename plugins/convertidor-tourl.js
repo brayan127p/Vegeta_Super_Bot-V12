@@ -1,52 +1,48 @@
-import fs from "fs"
-import fetch from "node-fetch"
-import FormData from "form-data"
+import uploadFile from '../lib/uploadFile.js'
+import uploadImage from '../lib/uploadImage.js'
+import fetch from 'node-fetch'
 
-let handler = async m => {
+let handler = async (m) => {
+  let q = m.quoted ? m.quoted : m
+  let mime = (q.msg || q).mimetype || ''
+  if (!mime) return conn.reply(m.chat, `${emoji} Por favor, responda a una *Imagen* o *Vídeo.*`, m, fake);
+  await m.react(rwait);
   try {
-    const q = m.quoted || m
-    const mime = q.mediaType || ""    
-    if (!/image|video|audio|sticker|document/.test(mime)) 
-      throw "```[ 📤 ] Responde a una imagen / vídeo / audio ( normal o documento )```"
-    const media = await q.download(true)
-    const fileSizeInBytes = fs.statSync(media).size    
-    if (fileSizeInBytes === 0) {
-      await m.reply("```[ ❗ ] El archivo es demasiado ligero```")
-      await fs.promises.unlink(media)
-      return
-    }   
-    if (fileSizeInBytes > 1073741824) {
-      await m.reply("```[ 📌 ] El archivo supera 1GB```")
-      await fs.promises.unlink(media)
-      return
-    }    
-    const { files } = await uploadUguu(media)
-    const caption = `\`\`\`[ ⭐ ] Aquí tienes la URL de tu archivo:\n${files[0]?.url}\`\`\``
-    await m.reply(caption)
-  } catch (e) {
-    await m.reply(`${e}`)
+    let media = await q.download()
+    let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
+    let link = await (isTele ? uploadImage : uploadFile)(media)
+    let img = await (await fetch(`${link}`)).buffer()
+    let txt = `乂  *L I N K - E N L A C E*  乂\n\n`
+        txt += `*» Enlace* : ${link}\n`
+        txt += `*» Acortado* : ${await shortUrl(link)}\n`
+        txt += `*» Tamaño* : ${formatBytes(media.length)}\n`
+        txt += `*» Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
+        txt += `> *${dev}*`
+
+    await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, fake, fkontak);
+    await m.react(done);
+  } catch {
+    await conn.reply(m.chat, `${emoji} Ocurrió un error al subir el archivo.`, m, fake);
+    await m.react(error);
   }
 }
+handler.help = ['tourl']
+handler.tags = ['transformador']
+handler.register = true
+handler.command = ['tourl', 'upload']
 
-handler.help = ["tourl2", "tourl"]
-handler.tags = ["tools"]
-handler.command = /^(tourl2|tourl)$/i
 export default handler
 
-async function uploadUguu(path) {
-  try {
-    const form = new FormData()
-    form.append("files[]", fs.createReadStream(path))   
-    const res = await fetch("https://uguu.se/upload.php", {
-      method: "POST",
-      headers: form.getHeaders(),
-      body: form
-    })    
-    const json = await res.json()
-    await fs.promises.unlink(path)   
-    return json
-  } catch (e) {
-    await fs.promises.unlink(path)
-    throw "Upload failed"
+function formatBytes(bytes) {
+  if (bytes === 0) {
+    return '0 B';
   }
+  const sizes = ['B', 'KB', 'MB', 'GB', 'TB']
+  const i = Math.floor(Math.log(bytes) / Math.log(1024))
+  return `${(bytes / 1024 ** i).toFixed(2)} ${sizes[i]}`;
+}
+
+async function shortUrl(url) {
+  let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
+  return await res.text()
 }
