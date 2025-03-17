@@ -33,7 +33,7 @@ global.owner = [
 global.mods = ['5216641804242', '584120515006', '5216633900512', '573004828388', '573154062343']
 global.suittag = ['584120346669']
 global.prems = []
-global.numcreadora = '524623467530'
+global.numcreador = '526641804242'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -42,11 +42,11 @@ global.baileys = 'V 6.7.9'
 global.languaje = 'Español'
 global.vs = '2.1.5'
 global.vsJB = '5.0'
-global.nameqr = 'Vegeta Super - Bot'
+global.nameqr = 'Vegeta - Super - Bot'
 global.namebot = '✿◟Vegeta-Sυper-Bσƚ◞✿'
 global.sessions = 'Sessions'
 global.jadi = 'JadiBots' 
-global.yukiJadibts = true
+global.VegetaJadibts = true
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
