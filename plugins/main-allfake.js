@@ -39,8 +39,8 @@ global.listo = '🍬 *Aquí tienes ฅ^•ﻌ•^ฅ*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://files.catbox.moe/xr2m6u.jpg')
 
 //Ids channel
-global.idchannel = '120363323286489957@newsletter'
-global.canalIdM = ["120363323286489957@newsletter", "120363323286489957@newsletter"]
+global.idchannel = '120363394965381607@newsletter'
+global.canalIdM = ["120363394965381607@newsletter", "120363394965381607@newsletter"]
 global.canalNombreM = ["VEGETA_SUPER_BOT-V12*:·", "VEGETA_SUPER_BOT-V12"]
 global.channelRD = await getRandomChannel()
 
