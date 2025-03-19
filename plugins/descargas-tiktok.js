@@ -17,9 +17,9 @@ var handler = async (m, { conn, args, usedPrefix, command }) => {
         const videoURL = tiktokData.data.play;
 
         if (videoURL) {
-            await conn.sendFile(m.chat, videoURL, "tiktok.mp4", ` ╭──────⚡──────╮  
-  ${emoji} *VEGETA-BOT*    
-╰──────⚡──────╯\n⟢ 𝑨𝒌𝒊 𝒕𝒊𝒆𝒏𝒆𝒔: *˙★˙†*\n⟢ 𝑫𝒊𝒔𝒇𝒓𝒖𝒕𝒂.`, m);
+            await conn.sendFile(m.chat, videoURL, "tiktok.mp4", ` ─━─━─≪✠≫─━─━─━╮
+   &{emoji} *VEGETA-BOT*
+╰━─━─━─≪✠≫─━─━─━╯\n⟢ 𝑨𝒌𝒊 𝒕𝒊𝒆𝒏𝒆𝒔: *˙★˙†*\n⟢ 𝑫𝒊𝒔𝒇𝒓𝒖𝒕𝒂.`, m);
         } else {
             return conn.reply(m.chat, "No se pudo descargar.", m);
         }
