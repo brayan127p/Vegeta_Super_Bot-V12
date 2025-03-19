@@ -85,15 +85,15 @@ const infoMessage = `★ *✦☆VEGETA_SUPER_BOT-V12☆✦* ★
 
 ✦ *Archivo encontrado:* *「 ${title} 」*  
 
-⚡ *Canal:* » *${videoInfo.author.name || 'Desconocido'}*  🔥
-◆━━━━━━◆✦◆━━━━━━◆  🔥
-⚡ *Vistas:* » *${vistas}*  
-◆━━━━━━◆✦◆━━━━━━◆  🔥
-⚡ *Duración:* » *${timestamp}*  
-◆━━━━━━◆✦◆━━━━━━◆  🔥
-⚡ *Publicado:* » *${ago}*  
-◆━━━━━━◆✦◆━━━━━━◆  🔥
-⚡ *Enlace:* » ${url}`;
+★ *Canal:* » *${videoInfo.author.name || 'Desconocido'}*  
+◆━━━━━━◆✦◆━━━━━━◆  
+★ *Vistas:* » *${vistas}*  
+◆━━━━━━◆✦◆━━━━━━◆  
+★ *Duración:* » *${timestamp}*  
+◆━━━━━━◆✦◆━━━━━━◆  
+★ *Publicado:* » *${ago}*  
+◆━━━━━━◆✦◆━━━━━━◆  
+★ *Enlace:* » ${url}`;
 const thumb = (await conn.getFile(thumbnail))?.data;
 
     const JT = {
