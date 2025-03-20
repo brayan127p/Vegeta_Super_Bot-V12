@@ -84,7 +84,7 @@
 "url-regex-safe": "^3.0.0",
 "uuid": "^10.0.0",
 "dotenv": "^16.4.5",
-"canvafy": "^2.11.2",
+"canvafy": "^7.2.0",
 "moment-timezone": "^0.5.37",
 "groq-sdk": "latest",
 "translate-google-api": "^1.0.4",
