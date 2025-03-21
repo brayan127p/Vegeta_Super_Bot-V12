@@ -81,7 +81,7 @@ const videoInfo = search.all[0];
 const { title, thumbnail, timestamp, views, ago, url } = videoInfo;
 const vistas = formatViews(views);
 
-const infoMessage = `★ *✦☆VEGETA_SUPER_BOT-V12☆✦* ★  
+const infoMessage = `★ *✦☆𝚅𝙴𝙶𝙴𝚃𝙰-𝙱𝙾𝚃-𝙼𝙱☆✦* ★  
 
 ✦ *Archivo encontrado:* *「 ${title} 」*  
 
