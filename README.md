@@ -67,7 +67,7 @@ apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
 ```bash
-git clone https://github.com/brayan127p/Vegeta_Super_Bot-V12 && cd Vegeta_Super_Bot-V12
+git clone https://github.com/brayan127p/VEGETA-BOT-MB && cd VEGETA-BOT-MB
 ```
 
 ```bash
@@ -86,7 +86,7 @@ Si después de instalar el bot en Termux se detiene (pantalla en blanco, pérdid
 
 1. Abre Termux y navega al directorio del bot:
     ```bash
-    cd Vegeta_Super_Bot-V12
+    cd VEGETA-BOT-MB
     ```
 
 2. Inicia el bot nuevamente:
@@ -102,12 +102,12 @@ Si después de instalar el bot en Termux y iniciar la session del bot (el numero
 
 1. Abre Termux y navega al directorio del bot:
     ```bash
-    cd Vegeta_Super_Bot-V12
+    cd VEGETA-BOT-MB
     ```
 
 2. Elimina la carpeta MiniSession:
     ```bash
-    rm -rf yukiSession
+    rm -rf VegetaSession
     ```
 
 3. Inicia el bot nuevamente:
@@ -155,11 +155,11 @@ href="https://dash.luminarys.shop.home"><img src="https://qu.ax/VAgKd.jpg" heigh
 
 ----- 
 #### **`⏏️ ACTIVAR EN KOYEB`**
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/brayan127p/Vegeta_Super_Bot-V12&branch=master&name=Vegeta_super_Bot-V12)
+[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/brayan127p/Vegeta_Super_Bot-V12&branch=master&name=VEGETA-BOT-MB)
 
 ------------------
 #### **`☁️ ACTIVAR EN RENDER`**
-[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Fbrayan127p%2FVegeta_Super_Bot-V12)
+[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Fbrayan127p%2FVEGETA-BOT-MB)
 
 
 
