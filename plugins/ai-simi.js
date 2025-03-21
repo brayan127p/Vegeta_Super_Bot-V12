@@ -14,7 +14,7 @@ const handler = async (m, { conn, text, command, args, usedPrefix }) => {
     }
 };
 
-handler.help = ['vegeta', 'bot'];
+handler.help = ['𝚅𝙴𝙶𝙴𝚃𝙰', '𝙱𝙾𝚃'];
 handler.tags = ['ai'];
 handler.register = true;
 handler.command = ['bot', 'vegeta'];
