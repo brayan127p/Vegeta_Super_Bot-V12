@@ -31,17 +31,17 @@ console.log(`Error : ${e}`)
 global.creador = 'Wa.me/526731010376'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/526731010376'
-global.namechannel = '·:*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀𝙍_𝘽𝙊𝙏-𝙑12♱ ¨*:·'
-global.namechannel2 = '·:*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀𝙍_𝘽𝙊𝙏-𝙑12♱ ¨*:·'
-global.namegrupo = '·:*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀𝙍_𝘽𝙊𝙏-𝙑12♱ ¨*:·'
-global.namecomu = '·:*¨♱𝙑𝙀𝙂𝙀𝙏𝘼_𝙎𝙐𝙋𝙀𝙍_𝘽𝙊𝙏-𝙑12♱ ¨*:·'
+global.namechannel = '·:*¨♱𝚅𝙴𝙶𝙴𝚃𝙰-𝙱𝙾𝚃-𝙼𝙱♱ ¨*:·'
+global.namechannel2 = '·:*¨♱𝚅𝙴𝙶𝙴𝚃𝙰-𝙱𝙾𝚃-𝙼𝙱♱ ¨*:·'
+global.namegrupo = '·:*¨♱𝚅𝙴𝙶𝙴𝚃𝙰-𝙱𝙾𝚃-𝙼𝙱♱ ¨*:·'
+global.namecomu = '·:*¨♱𝚅𝙴𝙶𝙴𝚃𝙰-𝙱𝙾𝚃-𝙼𝙱♱ ¨*:·'
 global.listo = '🍬 *Aquí tienes ฅ^•ﻌ•^ฅ*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://files.catbox.moe/xr2m6u.jpg')
 
 //Ids channel
 global.idchannel = '120363394965381607@newsletter'
 global.canalIdM = ["120363394965381607@newsletter", "120363394965381607@newsletter"]
-global.canalNombreM = ["VEGETA_SUPER_BOT-V12*:·", "VEGETA_SUPER_BOT-V12"]
+global.canalNombreM = ["𝚅𝙴𝙶𝙴𝚃𝙰-𝙱𝙾𝚃-𝙼𝙱*:·", "𝚅𝙴𝙶𝙴𝚃𝙰-𝙱𝙾𝚃-𝙼𝙱"]
 global.channelRD = await getRandomChannel()
 
 //fechas
